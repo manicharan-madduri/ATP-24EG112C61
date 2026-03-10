@@ -1,0 +1,41 @@
+# ###read all users
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/Samsung
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "productId":1,
+    "name":"Lens",
+    "brand":"Samsung",
+    "price":500
+}
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "productId":2,
+    "name":"Mobile",
+    "brand":"Apple",
+    "price":50000
+}
+
+###update a user
+PUT http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "productId":1,
+    "name":"Lens",
+    "brand":"Samsung",
+    "price":5000
+}
+
+###delete a user by 61
+DELETE http://localhost:3000/products/1
